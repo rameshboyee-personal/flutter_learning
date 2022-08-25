@@ -10,7 +10,7 @@ class ColoumnWidgetPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("First Page"),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.yellow,
           leading: Icon(Icons.home),
         ),
         body: Center(
