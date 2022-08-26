@@ -8,10 +8,10 @@ class ColoumnWidgetPage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white60,
         appBar: AppBar(
-          title: const Text("First Page"),
+          title: const Text("Column Widget Example"),
           centerTitle: true,
-          backgroundColor: Colors.yellow,
-          leading: Icon(Icons.home),
+          backgroundColor: Colors.green,
+          // leading: Icon(Icons.home),
         ),
         body: Center(
           child: Column(

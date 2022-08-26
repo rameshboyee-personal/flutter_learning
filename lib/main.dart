@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/Screens/alert_dialoge_example.dart';
 import 'package:hello_world/Screens/container_margin_padding.dart';
 import 'package:hello_world/Screens/my_first_page.dart';
+import 'package:hello_world/Screens/navigator_example.dart';
 import 'package:hello_world/Screens/raised_button.dart';
 import 'package:hello_world/Screens/row_widget.dart';
 import 'package:hello_world/Screens/text_field_page.dart';
+import 'package:hello_world/Screens/toast_message_example.dart';
 
 import 'Screens/column_widget.dart';
 import 'Screens/floating_action_button.dart';
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         brightness: Brightness.light, /*fontFamily: "Ind"*/
       ),
-      home: SnackBarPage()
+      home: NavigatorExample()
     );
   }
 }

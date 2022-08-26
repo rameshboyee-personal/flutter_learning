@@ -8,10 +8,10 @@ class RowWidgetPage extends StatelessWidget {
     return    Scaffold(
       backgroundColor: Colors.white60,
       appBar: AppBar(
-        title: const Text("First Page"),
+        title: const Text("Row Widget Example"),
         centerTitle: true,
         backgroundColor: Colors.green,
-        leading: Icon(Icons.home),
+        // leading: Icon(Icons.home),
       ),
 
       body:   Center(

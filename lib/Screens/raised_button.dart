@@ -8,7 +8,7 @@ class RaisedButtonPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white60,
       appBar: AppBar(
-        title: const Text("First Page"),
+        title: const Text("Raised Button Example"),
         centerTitle: true,
         backgroundColor: Colors.green,
         leading: Icon(Icons.home),
