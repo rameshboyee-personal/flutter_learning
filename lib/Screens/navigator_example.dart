@@ -12,6 +12,8 @@ import 'package:hello_world/Screens/text_field_page.dart';
 import 'package:hello_world/Screens/toast_message_example.dart';
 
 import '../DataPassingBetweenTwoScreens/user_form.dart';
+import '../StateFullWidgets/state_full_widget_example_one.dart';
+import '../StateFullWidgets/stls_and_full_widget.dart';
 import 'column_widget.dart';
 import '../ListViewDataPassing/dynamic_list_view_data_passing.dart';
 import 'floating_action_button.dart';
@@ -227,6 +229,29 @@ class NavigatorExample extends StatelessWidget {
                 onTap: () =>goToDynamicListViewDataPassing(context),
               ),
 
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("State Full Wiget Example One"))),
+                ),
+                onTap: () =>goToStateFullWidetOne(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("State Full VS State Less"))),
+                ),
+                onTap: () =>goToStateFullVsLessWidet(context),
+              ),
 
             ],
           ),
@@ -315,6 +340,18 @@ class NavigatorExample extends StatelessWidget {
     Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => ListViewDataPassingExample()));
+  }
+
+  goToStateFullWidetOne(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => StateFullWidgetExampleOne()));
+  }
+
+  goToStateFullVsLessWidet(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => StateLessAndFullWidget()));
   }
 
 }
