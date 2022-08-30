@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/BootomNavigationBar/my_bootom_navigation_bar.dart';
+import 'package:hello_world/CheckBox/my_check_box.dart';
+import 'package:hello_world/Drawer/drawer_page.dart';
+import 'package:hello_world/DropDownButton/drop_down_page.dart';
+import 'package:hello_world/ImageWidget/image_widget_examples.dart';
+import 'package:hello_world/RadioButtonAndListTile/my_radio_button.dart';
 import 'package:hello_world/Screens/MyIcon.dart';
 import 'package:hello_world/Screens/alert_dialoge_example.dart';
 import 'package:hello_world/Screens/container_margin_padding.dart';
@@ -10,8 +16,11 @@ import 'package:hello_world/Screens/row_widget.dart';
 import 'package:hello_world/Screens/snack_bar.dart';
 import 'package:hello_world/Screens/text_field_page.dart';
 import 'package:hello_world/Screens/toast_message_example.dart';
+import 'package:hello_world/SwithExample/my_switch.dart';
+import 'package:hello_world/TabBar/tab_bar_page.dart';
 
 import '../DataPassingBetweenTwoScreens/user_form.dart';
+import '../SharedPreferences/shared_preferences.dart';
 import '../StateFullWidgets/state_full_widget_example_one.dart';
 import '../StateFullWidgets/stls_and_full_widget.dart';
 import 'column_widget.dart';
@@ -253,10 +262,121 @@ class NavigatorExample extends StatelessWidget {
                 onTap: () =>goToStateFullVsLessWidet(context),
               ),
 
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Image Widget Example"))),
+                ),
+                onTap: () =>goToImageWidget(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Bottom Navigation Bar"))),
+                ),
+                onTap: () =>goToBottomNavigationBar(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Tab Bar"))),
+                ),
+                onTap: () =>goToTabBar(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Drawer Layout"))),
+                ),
+                onTap: () =>goToDrawerLayout(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Check Box"))),
+                ),
+                onTap: () =>goToCheckBoxPage(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Radio Button"))),
+                ),
+                onTap: () =>goToRadioButtonPage(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Drop Down"))),
+                ),
+                onTap: () =>goToDropDownPage(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Switch"))),
+                ),
+                onTap: () =>goToSwitchPage(context),
+              ),
+
+              GestureDetector(
+                child: Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black)),
+                  margin: EdgeInsets.all(10),
+                  child: Center(child: (Text("Shared Preferences"))),
+                ),
+                onTap: () =>goToSharePreferencePage(context),
+              ),
+
             ],
           ),
         ));
   }
+
+
+
 
   goToFirstScreen(BuildContext context) {
     Navigator.push(
@@ -353,5 +473,60 @@ class NavigatorExample extends StatelessWidget {
         context,
         MaterialPageRoute(builder: (context) => StateLessAndFullWidget()));
   }
+
+  goToImageWidget(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => ImageWidgetExample()));
+  }
+
+  goToBottomNavigationBar(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyBottomNavigationBar()));
+  }
+
+  goToTabBar(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => TabBarPage()));
+  }
+
+  goToDrawerLayout(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyDrawerPage()));
+  }
+
+  goToCheckBoxPage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyCheckBoxPage()));
+  }
+
+  goToRadioButtonPage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyRadioButtonPage()));
+  }
+
+  goToDropDownPage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyDropDownPage()));
+  }
+
+  goToSwitchPage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MySwitchPage()));
+  }
+
+  goToSharePreferencePage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MySharedPreferencePage()));
+  }
+
 
 }

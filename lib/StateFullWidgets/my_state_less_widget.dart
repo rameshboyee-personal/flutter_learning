@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 class MyStateLessWidget extends StatelessWidget {
   const MyStateLessWidget({Key? key}) : super(key: key);
 
