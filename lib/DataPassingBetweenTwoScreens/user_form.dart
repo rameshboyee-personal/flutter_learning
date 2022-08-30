@@ -38,7 +38,7 @@ class userForm extends StatelessWidget {
             ),
             Container(
               margin: const EdgeInsets.all(16),
-              child: RaisedButton(
+              child: TextButton(
                 onPressed: () {
                   goToUserDetailsPage(context);
                 },

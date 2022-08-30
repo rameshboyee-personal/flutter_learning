@@ -48,7 +48,7 @@ class TextFieldPage extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.all(16),
-                child: RaisedButton(onPressed: () {
+                child: TextButton(onPressed: () {
                   print(emailController.text);
                   print(phoneNumberController.text);
 

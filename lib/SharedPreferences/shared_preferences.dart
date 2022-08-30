@@ -39,7 +39,7 @@ class _MySharedPreferencePageState extends State<MySharedPreferencePage> {
           ),
           Container(
               padding: EdgeInsets.all(10),
-              child: RaisedButton(
+              child: TextButton(
                 onPressed: () async {
                   saveDataInSharedPreference(nameController.text.toString(),pswdController.text.toString());
                 },

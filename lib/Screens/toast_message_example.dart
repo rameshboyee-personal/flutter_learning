@@ -14,7 +14,7 @@ class ToastMessageExample extends StatelessWidget {
         centerTitle: true,
       ),
 
-      body: RaisedButton(
+      body: TextButton(
         onPressed: () {
            Fluttertoast.showToast(
                msg: "Hello this is toast message",

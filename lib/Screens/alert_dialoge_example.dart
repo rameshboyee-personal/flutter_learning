@@ -14,7 +14,7 @@ class AlertDialogeExample extends StatelessWidget {
         centerTitle: true,
       ),
 
-      body: RaisedButton(
+      body: TextButton(
         onPressed: () {
           craeteAlertDialoge(context);
         },
@@ -32,12 +32,12 @@ class AlertDialogeExample extends StatelessWidget {
        backgroundColor: Colors.green,
        elevation: 10.0 ,
       actions: [
-        RaisedButton(onPressed: () {
+        TextButton(onPressed: () {
           Navigator.pop(context);
          },
           child: Icon(Icons.cancel),),
 
-        RaisedButton(onPressed: () {
+        TextButton(onPressed: () {
           Navigator.pop(context);
         },
           child: Icon(Icons.tiktok_outlined),),

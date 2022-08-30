@@ -23,7 +23,7 @@ class SnackBarPage extends StatelessWidget {
             },textColor: Colors.yellow,),
 
             );
-          scafoldKey.currentState?.showSnackBar(snackBar);
+          // scafoldKey.currentState?.sn(snackBar);
         },
         child: Icon(Icons.add),
         backgroundColor: Colors.red,

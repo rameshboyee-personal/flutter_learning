@@ -14,15 +14,13 @@ class RaisedButtonPage extends StatelessWidget {
         leading: Icon(Icons.home),
       ),
       body: Center(
-          child: RaisedButton(
+          child: TextButton(
         onPressed: () {
           print("Button Clicked");
         },
         onLongPress: () {
           print("Button Long Pressed");
         },
-        color: Colors.red,
-        textColor: Colors.black,
         child: Text(
           'Click Me!!',
           // style: TextStyle(color: Colors.white60),
