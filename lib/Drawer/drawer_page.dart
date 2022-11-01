@@ -13,11 +13,12 @@ class _MyDrawerPageState extends State<MyDrawerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Drawer Page"),
-        centerTitle: false,
-      ),
+      // appBar: AppBar(
+      //   title: Text("Drawer Page"),
+      //   centerTitle: false,
+      // ),
       drawer: Drawer(
+        backgroundColor: Colors.black,
         child: ListView(
           children: <Widget>[
             DrawerHeader(

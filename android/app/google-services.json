@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "111438372887",
+    "project_id": "flutterlearning-fd68b",
+    "storage_bucket": "flutterlearning-fd68b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111438372887:android:a38c2aa89a0f31fff13c52",
+        "android_client_info": {
+          "package_name": "com.example.hello_world"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111438372887-2mm9jivujufsml3bsdl581057cgb181h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hello_world",
+            "certificate_hash": "0d90848e746ec6a31ed6a8181dd0a29f410ee018"
+          }
+        },
+        {
+          "client_id": "111438372887-lt7rse882jdk7neb4opctv4g402co31t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoYSJazmVyh2BiYshEF2JDwN5gkvGpIYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111438372887-lt7rse882jdk7neb4opctv4g402co31t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

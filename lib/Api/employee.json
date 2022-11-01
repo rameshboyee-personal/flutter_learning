@@ -1,0 +1,42 @@
+[
+
+  {
+    "name": "Dharma Raju",
+    "fitsName": "Jalla",
+     "employeeId": "ee201",
+    "dob": "03-06-2000",
+    "address": "Krishna",
+    "aadhaar": "773895831156"
+
+
+  },
+
+  {
+    "name": "Ramesh",
+    "fitsName": "Boyee",
+    "employeeId": "ee201",
+    "dob": "03-06-2000",
+    "address": "Vizianagaram",
+    "aadhaar": "773895831156"
+  },
+
+  {
+    "name": "Noosa Reddy",
+    "fitsName": "Guntu",
+    "employeeId": "ee201",
+    "dob": "03-06-2000",
+    "address": "Gunturu",
+    "aadhaar": "773895831156"
+
+  },
+
+  {
+    "name": "Naga Sai ",
+    "fitsName": "Gunturu",
+    "employeeId": "ee201",
+    "dob": "03-06-2000",
+    "address": "Krishna",
+    "aadhaar": "773895831156"
+  }
+
+]
